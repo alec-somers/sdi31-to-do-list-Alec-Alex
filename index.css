@@ -72,6 +72,10 @@ ul {
   background-color: transparent;
 }
 
+.remove-button:hover {
+  cursor: pointer;
+}
+
 .main-container {
   flex-direction: column;
   justify-content: space-between;

@@ -15,10 +15,6 @@ btn.addEventListener("click", () => {
   for (let i = 0; i < removeButtons.length; i++) {
     let currentRemoveButton = removeButtons[i];
 
-    //Make sure that each button has only one even handler to prevent memory overload
-    if (getEventListeners(currentRemoveButton).click.length > 0) {
-      continue;
-    }
     currentRemoveButton.addEventListener("click", (event) => {
       event.target.parentElement.remove();
     });
