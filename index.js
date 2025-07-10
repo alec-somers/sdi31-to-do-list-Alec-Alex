@@ -19,4 +19,5 @@ btn.addEventListener("click", () => {
       event.target.parentElement.remove();
     });
   }
+  input.value = "";
 });
