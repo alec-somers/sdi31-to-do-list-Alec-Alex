@@ -12,12 +12,11 @@ btn.addEventListener("click", () => {
 
   unorderedList.appendChild(newListItem);
 
-  for (let i = 0; i < removeButtons.length; i++) {
-    let currentRemoveButton = removeButtons[i];
+  // let currentRemoveButton = removeButtons[i];
 
-    currentRemoveButton.addEventListener("click", (event) => {
-      event.target.parentElement.remove();
-    });
-  }
+  removeButtons[removeButtons.length - 1].addEventListener("click", (event) => {
+    event.target.parentElement.remove();
+  });
+
   input.value = "";
 });
